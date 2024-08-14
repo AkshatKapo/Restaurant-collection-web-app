@@ -1,0 +1,8 @@
+<h1>My Collection :</h1>
+<div *ngFor="let restaurant of restaurants" class="restaurant-card">
+    <p><strong>Name:</strong> {{ restaurant.restaurant_Name }}</p>
+    <p><strong>Location:</strong> {{ restaurant.location }}</p>
+    <p><strong>Food:</strong> {{ restaurant.food }}</p>
+    <p><strong>Rate:</strong> {{ restaurant.rate }}</p>
+    <button type="button" (click)="deleterest(restaurant.id)" class="delete-btn">Delete</button>
+</div>

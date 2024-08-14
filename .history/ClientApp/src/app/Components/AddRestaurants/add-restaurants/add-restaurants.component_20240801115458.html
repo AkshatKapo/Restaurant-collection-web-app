@@ -1,0 +1,38 @@
+<div class="Addrestaurant">
+    <form [formGroup]="addRestaurantForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="restaurant_Name">Name:</label>
+            <input type="text" id="restaurant_Name" formControlName="restaurant_Name" placeholder="Name of the restaurant" />
+        </div>
+    </form>
+</div>
+
+<div class="Locationrestaurant">
+    <form [formGroup]="addRestaurantForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" formControlName="location" placeholder="location" />
+        </div>
+    </form>
+</div>
+<div class="FoodRestaurant">
+    <form [formGroup]="addRestaurantForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="food">Food:</label>
+            <input type="text" id="food" formControlName="food" placeholder="Food" />
+        </div>
+    </form>
+</div>
+<div class="Raterestaurant">
+    <form [formGroup]="addRestaurantForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="rate">Rate:</label>
+            <input type="text" id="rate" formControlName="rate" />
+        </div>
+    </form>
+</div>
+
+
+
+
+

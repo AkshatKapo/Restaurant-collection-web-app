@@ -1,0 +1,8 @@
+<h1>My Collection :</h1>
+<div *ngFor="let restaurant of restaurants">
+    <p>Name: {{ restaurant.restaurant_Name}}</p>
+    <p>Location: {{ restaurant.location }}</p>
+    <p>Food: {{ restaurant.food}}</p>
+    <p>Rate: {{ restaurant.rate}}</p>
+    <button type="button" (click)="de"></button>
+</div>

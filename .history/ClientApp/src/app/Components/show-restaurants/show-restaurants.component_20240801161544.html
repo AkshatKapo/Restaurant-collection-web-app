@@ -1,0 +1,17 @@
+<h1>My Collection :</h1>
+<div *ngFor="let restaurant of restaurants">
+    <p>Name: {{ restaurant.restaurant_Name}}</p>
+    <p>Location: {{ restaurant.location }}</p>
+    <p>Food: {{ restaurant.food}}</p>
+    <p>Rate: {{ restaurant.rate}}</p>
+    <div class="delete">
+        <div class="card" *ngIf="food_restaurant">
+            <h5>{{food_restaurant.restaurant_Name}}</h5>
+            <h6>{{food_restaurant.food}}</h6>
+            <h6>{{food_restaurant.rate}}</h6>
+            <a [routerLink]="['/show-restaurants']" class="card-link">Back</a>
+            <button (click)="deleterestaurant(food_restaurant.id)" class="btn btn-danger">Approve</button>
+        </div>
+    </div>
+    
+</div>

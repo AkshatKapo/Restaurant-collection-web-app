@@ -1,0 +1,10 @@
+<div class="delete">
+    <div class=delete-card" *ngIf="food_restaurant">
+        <h5>{{food_restaurant.restaurant_Name}}</h5>
+        <h6>{{food_restaurant.food}}</h6>
+        <h6>{{food_restaurant.rate}}</h6>
+        <a [routerLink]="['/show-restaurants']" class="card-link">Back</a>
+        <button (click)="deleterestaurant(food_restaurant.id)" class="btn btn-danger">Approve</button>
+    </div>
+</div>
+
